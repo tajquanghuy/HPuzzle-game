@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.HomeFragment"
+        android:label="8 Puzzle"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/solverFragment"
+        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.SolverFragment"
+        android:label="Puzzle Solver"
+        tools:layout="@layout/fragment_solver">
+        <action
+            android:id="@+id/action_solverFragment2_to_solverStepsFragment"
+            app:destination="@id/solverStepsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/solverStepsFragment"
+        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.SolverStepsFragment"
+        android:label="Solver Steps"
+        tools:layout="@layout/fragment_solver_steps">
+        <argument
+            android:name="puzzle"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_solverStepsFragment_to_solverFragment"
+            app:destination="@id/solverFragment" />
+    </fragment>
+</navigation>
