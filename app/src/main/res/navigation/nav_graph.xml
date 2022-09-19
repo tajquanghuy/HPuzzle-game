@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.HomeFragment"
+        android:name="com.puzzletion.hpuzzlegame.cool8puzzle.ui.fragments.HomeFragment"
         android:label="8 Puzzle"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/solverFragment"
-        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.SolverFragment"
+        android:name="com.puzzletion.hpuzzlegame.cool8puzzle.ui.fragments.SolverFragment"
         android:label="Puzzle Solver"
         tools:layout="@layout/fragment_solver">
         <action
@@ -21,12 +21,12 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.InfoFragment"
+        android:name="com.puzzletion.hpuzzlegame.cool8puzzle.ui.fragments.InfoFragment"
         android:label="Info"
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/solverStepsFragment"
-        android:name="com.pigllet.hpuzzlegame.cool8puzzle.ui.fragments.SolverStepsFragment"
+        android:name="com.puzzletion.hpuzzlegame.cool8puzzle.ui.fragments.SolverStepsFragment"
         android:label="Solver Steps"
         tools:layout="@layout/fragment_solver_steps">
         <argument
